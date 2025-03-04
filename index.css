@@ -1,5 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
 input{
     display: block;
     padding: 4px 12px;
     margin:20px;
 }
+.logo{
+    height: 100px;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    margin: 10px 110px;
+}
+nav{
+    padding: 20px;
+    padding-right: 220px;
+    background-color: #F3F3F3;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 110px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav#navBar ul li:first-child,
+ul:last-child {
+    flex-grow: 0; /* Prevents extra spacing on the first and last items */
+    text-align: left; /* Aligns first item to the left */
+}
+select{
+    padding: px;
+}
+ div#title{
+    margin: 10px 110px;
+ }
+ hr{
+    border: none;
+    height: 1.5px;
+    background-color: rgb(223, 223, 223);
+    margin-bottom: 20px;
+ }
+ section#form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 110px;
+    gap: 20px;
+ }
+ .secLeft, .secRight{
+    padding:20px;
+    border: 1.5px solid rgb(223, 223, 223);
+    border-radius: 5px;
+ }
+ div .birth{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+ }
+ .warn{
+    color: rgb(84, 84, 84);
+    font-size: 14px;
+ }
+ label{
+    display: block;
+    margin: 5px 0px;
+ }
+ input{
+    margin: 0px;
+    margin: 2px 0px;
+    width: 100%;
+    height: 32px;
+ }
+ select{
+    width: 100%;
+    padding: 4px;
+    height: 32px;
+ }
+ .radioB{
+    padding: opx;
+    display: inline;
+    width: auto;
+ }
