@@ -13,6 +13,7 @@
         <img src="./img/learn.svg" alt="learning and earning" class="logo logo2">
         <img src="./img/a2i.svg" alt="a2i" class="logo logo3">
     </header>
+    <!-- Navbar -->
     <nav id="navBar">
         <ul>
             <li><a href="">Home</a></li>
@@ -24,11 +25,13 @@
             <li><a href="#">Login</a></li>
         </ul>
     </nav>
+    <!-- title h1 h2 -->
     <div id="title">
         <h1>Student Registration Form</h1>
         <hr>
-        <h2>please enter relevant information</h2>
+        <h2>Please enter relevant information</h2>
     </div>
+    <!-- form box -->
     <section id="form">
             <div class="secLeft">
                 <span class="warn">Mandatory field*</span>
@@ -70,14 +73,22 @@
                         <option value="#">2023</option>
                     </select>
                 </div>
-                <label for="gnder">Select gender*</label>
-                <label>
-                    <input type="radio" name="gender" value="male" class="radioB"> Male
-                </label>
-                <label>
-                    <input type="radio" name="gender" value="female" class="radioB"> Female
-                </label>
+                <label for="gender-male">Select gender*</label>
+                <div class="gender--select">
+                    <label id="radioBtn">
+                        <input type="radio" id="gender-male" name="gender" value="male" class="radioB"> Male
+                    </label>
+                    <label id="radioBtn">
+                        <input type="radio" id="gender-female" name="gender" value="female" class="radioB"> Female
+                    </label>
+                </div>
+                <!-- Email and Phone -->
+                <label for="Email">Email*</label>
+                <input type="text" id="Email">
+                <label for="Phone">Phone* <span class="warn">(Must be 11 Digits)*</span></label>
+                <input type="text" id="Phone">
             </div>
+            <!-- Right Form Section -->
             <div class="secRight">
                 <label for="#">Identification No*</label>
                 <select name="#" id="" required>
@@ -106,7 +117,21 @@
                     <option value="#">HSC</option>
                     <option value="#">HSC</option>
                 </select>
+                <!-- Upload file -->
+                <label for="pictue" class="picture">Upload Your Photo <span class="warn"> (Must passport size Photo)</span></label>
+                <input type="file" name="" id="certificate">
+                <label for="certificate" class="certificate">Upload Your Photo <span class="warn"> (Only Pdf)</span></label>
+                <input type="file" name="" id="certificate">
             </div>
     </section>
+    <section class="submit">
+        <button class="submit-button">
+            Submit your Information
+        </button>
+        <span class="warn btnstatus">Check your information before submit</span>
+    </section>
+    <footer class="footer">
+        <p>&copy;all right preserved by atikur rahman</p>
+    </footer>
 </body>
 </html>
